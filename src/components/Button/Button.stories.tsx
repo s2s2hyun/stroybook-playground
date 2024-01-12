@@ -10,7 +10,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: "버튼",
+  children: "Button",
 };
 
 export const Secondary = Template.bind({});

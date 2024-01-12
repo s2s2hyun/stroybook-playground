@@ -1,30 +1,16 @@
-function RunProgram() {
-  const url = "frontendsample:\\";
-  const exec = document.createElement("a");
-  exec.setAttribute("href", url);
-  exec.click();
-}
+import Button from "@/components/Button/Button";
 
 function App() {
-  const LolButton = () => {
-    RunProgram();
-  };
-
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <h3 style={{ marginBottom: "1rem" }}>Button Click</h3>
-        <button
-          onClick={LolButton}
-          style={{
-            padding: "1.6rem",
-            borderRadius: "1rem",
-            fontSize: "1rem",
-            fontWeight: 600,
-          }}
-        >
-          Click
-        </button>
+      <div style={{ padding: "1rem 2rem" }}>
+        <Button style={{ marginBottom: "16px" }} size="sm" color="primary">
+          스몰 primary
+        </Button>
+        <Button style={{ marginBottom: "16px" }}>미듐 primary</Button>
+        <Button color="secondary" size="lg">
+          라지 secondary
+        </Button>
       </div>
     </>
   );
